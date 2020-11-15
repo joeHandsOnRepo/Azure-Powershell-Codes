@@ -1,2 +1,2 @@
-# Azure-Powershell-Codes
-Azure Powershell Script
+# Hands_On Demo
+This Repo will be used to store Powershell Scripts for Azure Deployment
