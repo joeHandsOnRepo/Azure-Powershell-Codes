@@ -1,35 +1,20 @@
-variable "resource_group_name" {
-  description = "The name of the resource group"
-  type        = string
-  default     = "myResourceGroup"
+variable "ResourceGroupName" {
+    type = string
+    default = "IAC-VM-FN"
+    }
+  
+variable "subscription_id" {
+  description = "The Subscription ID where Azure resources will be created"
 }
 
-variable "location" {
-  description = "The location where the resources will be created"
-  type        = string
-  default     = "East US"
+variable "client_id" {
+  description = "The Client ID (Application ID) for the Service Principal"
 }
 
-variable "storage_account_name" {
-  description = "The name of the storage account. It must be globally unique."
-  type        = string
-  default     = "mystorageaccount123"
+variable "client_secret" {
+  description = "The Client Secret for the Service Principal"
 }
 
-variable "tags" {
-  description = "Tags to be applied to the resources"
-  type        = map(string)
-  default     = {
-    environment = "dev"
-    project     = "myProject"
-  }
+variable "tenant_id" {
+  description = "The Tenant ID associated with your Azure Active Directory"
 }
-
-variable "storage_container_name" {
-  description = "The name of the storage container within the storage account"
-  type        = string
-  default     = "backup"
-}
-
-variable "blob_name" {
- 
